@@ -1,7 +1,9 @@
 function reduce(head, f, init) {
-    let newArr = [head]
-    for (var i = 0; i < newArr.length; i++) {
-        newArr = Object.values(head)
-    }
+    let arr = [];
+    while (head !== null) {
+        arr.push(head.data)
+        head = head.next;
 
+    }
+    return arr.reduce(f, init);
 }

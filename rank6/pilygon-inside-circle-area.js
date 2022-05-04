@@ -1,0 +1,1 @@
+return (Math.sqrt(3) / 4) * circleRadius * circleRadius * numberOfSides.toFixed(3);
